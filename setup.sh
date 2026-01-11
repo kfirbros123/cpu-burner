@@ -12,7 +12,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=ec2-user
+User=root
 WorkingDirectory=/home/ec2-user/cpu-burner
 ExecStart=/home/ec2-user/cpu-burner/venv/bin/python /home/ec2-user/cpu-burner/main.py
 Restart=always
